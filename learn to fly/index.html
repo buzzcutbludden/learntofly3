@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn to Fly 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- Load Ruffle from CDN -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #game-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="back">
+
+    <a href="index.html" class="button">Back to Home</a>
+
+    <!-- Ruffle game container -->
+    <div id="game-container">
+        <object type="application/x-shockwave-flash"
+                data="assets/learntofly.swf"
+                width="100%"
+                height="100%">
+            <param name="movie" value="assets/learntofly.swf">
+        </object>
+    </div>
+
+</body>
+</html>
